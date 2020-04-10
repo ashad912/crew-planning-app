@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="" />
+    </definition>
+ 	<definition name="menuUserPM" extends="base.definition">
+        <put-attribute name="title" value="PlanningMenu" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    <definition name="menuUser" extends="base.definition">
+        <put-attribute name="title" value="CrewMenu" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUser.jsp" />
+    </definition>
+ 	
+    <definition name="user" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/WEB-INF/views/user.jsp" />
+    </definition>
+    
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    
+    <definition name="hello" extends="base.definition">
+        <put-attribute name="title" value="HelloSuperAdmin!" />
+        <put-attribute name="body" value="/WEB-INF/views/hello.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="person" extends="base.definition">
+        <put-attribute name="title" value="Person" />
+        <put-attribute name="body" value="/WEB-INF/views/person.jsp" />
+    </definition>
+    
+    <definition name="personRole" extends="base.definition">
+        <put-attribute name="title" value="PersonRole" />
+        <put-attribute name="body" value="/WEB-INF/views/personRole.jsp" />
+    </definition>
+    
+    <definition name="admin" extends="base.definition">
+        <put-attribute name="title" value="Admin" />
+        <put-attribute name="body" value="/WEB-INF/views/admin.jsp" />
+    </definition>
+    
+    <definition name="userRole" extends="base.definition">
+        <put-attribute name="title" value="UserRole" />
+        <put-attribute name="body" value="/WEB-INF/views/userRole.jsp" />
+    </definition>
+ 
+  	<definition name="accessDenied" extends="base.definition">
+        <put-attribute name="title" value="AccessDenied" />
+        <put-attribute name="body" value="/WEB-INF/views/accessDenied.jsp" />
+    </definition>
+    
+     <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
+    
+    <definition name="address" extends="base.definition">
+        <put-attribute name="title" value="Address" />
+        <put-attribute name="body" value="/WEB-INF/views/address.jsp" />
+    </definition>
+    
+    <definition name="plane" extends="base.definition">
+        <put-attribute name="title" value="Planes" />
+        <put-attribute name="body" value="/WEB-INF/views/plane.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="planeDetails" extends="base.definition">
+        <put-attribute name="title" value="PlaneDetails" />
+        <put-attribute name="body" value="/WEB-INF/views/planeDetails.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="flight" extends="base.definition">
+        <put-attribute name="title" value="Flights" />
+        <put-attribute name="body" value="/WEB-INF/views/flight.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="crewMember" extends="base.definition">
+        <put-attribute name="title" value="CrewMembers" />
+        <put-attribute name="body" value="/WEB-INF/views/crewMember.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="planningMember" extends="base.definition">
+        <put-attribute name="title" value="PlanningMembers" />
+        <put-attribute name="body" value="/WEB-INF/views/planningMember.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="crewMemberDetails" extends="base.definition">
+        <put-attribute name="title" value="CrewMemberDetails" />
+        <put-attribute name="body" value="/WEB-INF/views/crewMemberDetails.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    
+    <definition name="success" extends="base.definition">
+        <put-attribute name="title" value="Success" />
+        <put-attribute name="body" value="/WEB-INF/views/success.jsp" />
+    </definition>
+    <definition name="userCrewMember" extends="base.definition">
+        <put-attribute name="title" value="Timetable" />
+        <put-attribute name="body" value="/WEB-INF/views/userCrewMember.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUser.jsp" />
+    </definition>
+    <definition name="userPlanningMember" extends="base.definition">
+        <put-attribute name="title" value="MyFlightDetails" />
+        <put-attribute name="body" value="/WEB-INF/views/userPlanningMember.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    <definition name="flightEditInit" extends="base.definition">
+        <put-attribute name="title" value="EditMyFlight" />
+        <put-attribute name="body" value="/WEB-INF/views/flightEditInit.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+    <definition name="crewMemberEditInit" extends="base.definition">
+        <put-attribute name="title" value="EditMyPersonalData" />
+        <put-attribute name="body" value="/WEB-INF/views/crewMemberEditInit.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUser.jsp" />
+    </definition>
+    <definition name="planningMemberEditInit" extends="base.definition">
+        <put-attribute name="title" value="EditMyPersonalData" />
+        <put-attribute name="body" value="/WEB-INF/views/planningMemberEditInit.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menuUserPM.jsp" />
+    </definition>
+ 
+</tiles-definitions>

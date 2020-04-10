@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+DIV.header {
+	color: black;
+	background-image: url('../images/header.jpg');
+	background-size:50% 100%;;
+	background-repeat: no-repeat;
+}

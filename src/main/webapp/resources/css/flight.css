@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+DIV.flight {
+	td {
+  		border-bottom: solid 1px black;
+	}
+}

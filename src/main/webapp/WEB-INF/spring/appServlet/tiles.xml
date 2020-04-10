@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+		"-//Apache Software Fundation//DTD Tiles Configuration 3.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+    </definition>
+ 
+    <definition name="user" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/WEB-INF/views/user.jsp" />
+    </definition>
+    
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    
+    <definition name="hello" extends="base.definition">
+        <put-attribute name="title" value="Hello" />
+        <put-attribute name="body" value="/WEB-INF/views/hello.jsp" />
+    </definition>
+    
+    <definition name="person" extends="base.definition">
+        <put-attribute name="title" value="Person" />
+        <put-attribute name="body" value="/WEB-INF/views/person.jsp" />
+    </definition>
+ 
+</tiles-definitions>
